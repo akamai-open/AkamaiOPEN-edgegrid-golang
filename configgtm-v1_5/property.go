@@ -4,7 +4,6 @@ import (
 	"fmt"
 
 	"github.com/akamai/AkamaiOPEN-edgegrid-golang/client-v1"
-	dns "github.com/akamai/AkamaiOPEN-edgegrid-golang/configdns-v1"
 )
 
 //
@@ -101,7 +100,6 @@ type Property struct {
 	TrafficTargets            []*TrafficTarget `json:"trafficTargets,omitempty"`
 	Links                     []*Link          `json:"links,omitempty"`
 	LivenessTests             []*LivenessTest  `json:"livenessTests,omitempty"`
-	MxRecords                 []*dns.MxRecord  `json:"mxRecords,omitempty"`
 }
 
 type PropertyList struct {
